@@ -1,0 +1,45 @@
+The Goal
+1. Beginning c++ through game programming
+2. C++ Primer
+3. Sfml game development by example
+4. Effective c++
+
+* Introduction
+Editor->Source->Compiler->ObjectCode->Linker->ExecutableFile
+
+Linker links object files to any external files as necessary Then creates an
+executable
+
+#include <iostream> is called a preprocessor directive they always start with #
+
+*preprocessor*- runs before the compiler and substitutes
+
+surrounding with < > tells the compiler it can find the file amongst all the
+other files that came with it
+
+*header file*- A file that you include in your programs
+
+*cout*-  is an object, defined in the file iostream. It sends data to the
+standard output stream. Which in most programs is the console/terminal
+
+*<<*- output operator. Used like a funnel. Funnels open side to pointy side
+
+*>>*- extraction operator. Used with cin
+
+*std*- is a namespace. Like an area code of a phone number
+
+*::* scope resolution operator. You prefix a namespace with it
+
+*using namespace ...*- a using directive, gives access to items in the std
+namespace
+
+
+*identifier*- name of a variable. Must only contain numbers, letters underscores.
+Can't start with a number. Can't be a keyword (reserved word)
+
+*cin >> fuel*- assing a value to fuel
+
+Defining new names for types
+
+- typdef unsigned short int ushort; defines ushort as another name for unsigned
+short int.
