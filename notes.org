@@ -33,7 +33,6 @@ standard output stream. Which in most programs is the console/terminal
 *using namespace ...*- a using directive, gives access to items in the std
 namespace
 
-
 *identifier*- name of a variable. Must only contain numbers, letters underscores.
 Can't start with a number. Can't be a keyword (reserved word)
 
@@ -42,4 +41,8 @@ Can't start with a number. Can't be a keyword (reserved word)
 Defining new names for types
 
 - typdef unsigned short int ushort; defines ushort as another name for unsigned
-short int.
+short int.'
+
+prefix-postfix- ++lives increments variable before the evaluation fo larger exp
+IE ++lives * 10 increments lives before mult by 10. if added after then lives
+won't be increased until after the operation.
