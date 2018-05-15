@@ -5,6 +5,7 @@ The Goal
 4. Effective c++
 
 * Introduction
+** Chapter 1
 Editor->Source->Compiler->ObjectCode->Linker->ExecutableFile
 
 Linker links object files to any external files as necessary Then creates an
@@ -46,3 +47,70 @@ short int.'
 prefix-postfix- ++lives increments variable before the evaluation fo larger exp
 IE ++lives * 10 increments lives before mult by 10. if added after then lives
 won't be increased until after the operation.
+
+*Common Types*
+short int -32,768 to 32,767
+unsigned short int 0 to 65,535
+int -2,147,483,658 2,147,483,657
+unsigned int 0 to 4,294,967,295
+long int -2,147,483,648 to 2,147,483,647
+unsigned long int
+float 3.4e +/- 38(7 sig figs)
+double 1.7E +/- 308 (15 sig figs)
+long double 1.7E +/- 308 (15 sig figs)
+char 256 character values
+bool true or false
+
+Legal Variables
+- only numbers, letters, and underscores
+- can't start with a number
+- can't use a reserved keyword
+
+** Chapter 2
+Booleans
+Any non-zero value can b interpreted as true
+0 is interpreted as false
+
+*Relational Operators*
+| Operator | Meaning                  | Sample Expression | Evaluates To |
+|----------+--------------------------+-------------------+--------------|
+| ==       | equal to                 | 5==5              | true         |
+|          |                          | 5 == 8            | false        |
+| !=       | not equal to             | 5 != 8            | true         |
+|          |                          | 5 != 5            | false        |
+| >        | greater than             | 8 > 5             | true         |
+|          |                          | 5 > 8             | false        |
+| <        | less than                | 5 < 8             | true         |
+|          |                          | 8 < 5             | flase        |
+| >=       | greater than or equal to | 8 >= 5            | true         |
+|          |                          | 5 >=8             | false        |
+| <=       | less than or equal to    | 5 <= 8            | true         |
+|          |                          | 8 <= 5            | false        |
+
+The final else clause in an if else-if suite isn't required
+
+*switch statement*- Test the value in the parenthesis against possible values
+break and default are optional.
+/Trap/ A switch statement can only be used to test an int. It won't work
+with anything else
+
+switch (choice)
+{
+  case value1:
+         statement1;
+         break;
+  case value2:
+         statement2;
+         break;
+  case value3:
+         statement3;
+         break;
+              .
+              .
+              .
+  case valueN:
+         statementN;
+         break;
+  default: // if none of the values are true
+         statement + 1;
+}
