@@ -114,3 +114,39 @@ switch (choice)
   default: // if none of the values are true
          statement + 1;
 }
+
+*Do Loop*- Like a while loop, but loop body is always evaluated at least once
+
+int main()
+{
+  do
+    {
+      statement;
+    } while (condition);
+
+  return 0;
+}
+
+
+Logical Operators
+
+| Operator | Description | Sample Expression               |
+|----------+-------------+---------------------------------|
+| !        | Logical NOT | !expression                     |
+| &&       | Logical AND | expression1&&expression2        |
+| dbl pipe | Logical OR  | expression1 dblpipe expression2 |
+
+
+<cstdlib> contains fucnions that deal with generating random numbers
+
+rand function- generates an integer between 0 and at least 32767
+
+srand(static_cast<unsigned int>(time(0))) seeds the random number generator at a given time
+seeds the random number generator based on the time and date (time(0))
+
+static_cast<unsigned int> converts value to unsigned int
+any postive number divided by 6 will give a remainder between 0 and 5. so + 1 makes 1-6
+
+enum var {choice1 choice 2} (evaluates to number)
+
+any enumerators that are not assigned a value are given the value of the prev enumerator +1
