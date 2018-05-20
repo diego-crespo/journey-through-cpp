@@ -150,3 +150,65 @@ any postive number divided by 6 will give a remainder between 0 and 5. so + 1 ma
 enum var {choice1 choice 2} (evaluates to number)
 
 any enumerators that are not assigned a value are given the value of the prev enumerator +1
+** Chapter 3...
+
+for loop structure
+for (initialization; test; action)
+    statement;
+
+for (int i = 0; i < 10; ++i)
+{
+  body
+}
+
+for ( ; count < 10;)
+{
+  cout << count << " " ;
+  ++count;
+
+data member- A data element of an object
+
+member function- Function of an object
+
+(.)- Selection operator for accessing data members in objects.
+
+(+)- Using the + operator to concatenate strings is called overloading
+
+strings- strings are considered objects and have functions associated with them.
+
+*Trap*
+c++ compilers do not perform bounds checking when working with string objects
+and the subscripting operator. This means that the compiler doesn't check to
+see whether you're attempting to access an element that doesn't exist. Accessing
+an invalid sequence element can lead to disastrous results because it's possible
+to write over critical data in your computer's memory. By doing this, you can
+crash your porgram, so take care when using the subscripting operator
+
+*In this example*
+for (unsigned int i = 0; i < phrase.size(); ++i)
+// phrase.size returns an unsigned integral, so i is an unsigned int
+
+*string::npos* - represents largest possible size of a string object so
+it is greater than any possible valid postion number in a string obj.
+Therefore it perfect return value to indicate that one string can't be
+found in another
+
+string.find()- specify substring to find. Can pass in an index to start from.
+
+string.erase()- removes letters from a string starting from index, with 2nd
+number specifying the amount of letters to remove
+
+string.empty()- returns a bool value of true if string object is empty
+
+Arrays- Create an array like declaring a variable. Declare the type, and give
+it a maximum amount 
+
+string inventory[] = {"sword", "armor", "shield"};
+
+array[pos] = items;
+
+Declaring a constant that is the size of an array can keep from accessing
+items out of bounds of the array
+
+C-style strings- char phrase[] = "Game Over!!!"; array that terminates
+with a null character (\0)
