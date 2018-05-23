@@ -212,3 +212,35 @@ items out of bounds of the array
 
 C-style strings- char phrase[] = "Game Over!!!"; array that terminates
 with a null character (\0)
+
+*Trap* C-style strings are not resizeable dynamically, C++ string obj are
+
+*Note*
+- int and char are built in types, therefore you do not need to include them
+Strings are not
+
+- both length() and size() functions return same value so you can use either
+
+
+predicate function- returns a bool value (true or false)
+** Chapter 4
+
+STL- (Standard Template Library) Powerful Collection of programming work that's been done well.
+provides containers, iterators, and algorithms
+
+container- let you store and access collections of values of the same type. They offer more
+flexibility than arrays
+
+vector- the vector class is a container defined by stl. It is a dynamic array. 
+*Pros*
+ - vectors can grow while arrays can not.
+ - vectors can be used with STL algorithms, arrays cannot
+*cons*
+ - use more memory than arrays
+ - there can be a performance cost
+
+*hint*
+You can declare a starting size for a vector by putting parenthesis after vector name
+vector<string> inventory(10, "nothing")
+STL lives in the std namespace
+
